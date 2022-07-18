@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loan.css">
+    <title>Loan Application Form</title>
+</head>
+<body class="back" onload="gen_otp();acces_loan_details()">
+    <div class="heading">
+        <h1>Thank you...!!!!</h1>
+    </div>
+     
+    <p>Dear <b><span id="fname"></span></b> <br>
+    Thank you for your inquiry.A 4 digit number has been sent to your email: <b><span id="email"></span></b> , please 
+    enter it in the following box and submit for confirmation.
+    </p>
+    <input type="text" id="otp_txt"> 
+    <p id="otp_msg"></p>
+  <button onclick="validate_otp()" >Validate</button>
+      
+
+
+    <script type="text/javascript" src="loan.js"></script>
+</body>
+</html>
